@@ -1,0 +1,28 @@
+PROGRAM Example IS
+
+  INSTRUCTION foo IS
+    IF random THEN
+     car
+    ELSE
+     turnleft
+    END IF
+  END foo
+  
+  INSTRUCTION car IS
+    turnright
+    turnright
+  END car
+  
+BEGIN
+  WHILE true DO
+    IF next-is-empty THEN
+      move
+    ELSE
+      IF next-is-enemy THEN
+        car
+      ELSE
+        foo
+      END IF
+    END IF
+  END WHILE
+END Example
